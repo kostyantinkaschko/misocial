@@ -1,0 +1,14 @@
+=btn ($fixed: true, $empty: false)
+
+    @if $fixed
+        width: 190px
+    @else
+        windth: 150px
+
+    if $empty = false 
+        background-color: #fff 
+
+=media ($size)
+    @media screen and (min-width: #{$size}px)
+        @content
+
