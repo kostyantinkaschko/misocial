@@ -9,12 +9,18 @@ html,
 body
     scroll-behavior: smooth
     cursor: url(../img/cursor.cur), auto
+    animation: body 3s forwards
 
 body
     margin: 0
     font-family: 'Maven Pro', sans-serif
 
-p
+p,
+h1,
+h2,
+h3,
+h4,
+h5
     cursor: url(../img/text.cur), auto
 
 .selectnn
@@ -215,6 +221,7 @@ header
     display: inline-block
     font-size: 12rem
     cursor: url(../img/cursor.cur), auto
+    user-select: none
 .arrow::before,
 .arrow:after
     content: ""
@@ -636,3 +643,9 @@ footer
 
     100%
         box-shadow: #fff -1px 3px 0 0
+
+@keyframes body
+    0%
+        opacity: 0
+    100%
+        opacity: 1
